@@ -29,10 +29,6 @@ const ChatWindow = () => {
 
 	/* listen for incoming messages */
 	useEffect(() => {
-		const handler = (incomingMsg: IMessage) => {
-			setMessages([...messages, incomingMsg]);
-		}
-
 		/* listen for incoming messages *HERE* */
 
 		return () => {
