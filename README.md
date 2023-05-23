@@ -11,8 +11,8 @@
 - Od tego momentu wszystkie polecenia należy wykonać w tym środowisku.
 
 ### 2. Uruchomienie projektu
-- Za pomocą polecenia `git clone https://github.com/filipkorus/JPWP-taksks.git` sklonuj kod startowy.
-- Wejdź w folder `zadania` (`cd zadania`) oraz zainstaluj potrzebne pakiety npm (`npm install`).
+- Za pomocą polecenia `git clone https://github.com/filipkorus/JPWP-tasks.git` sklonuj kod startowy.
+- Wejdź w folder `zadania` (`cd JPWP-tasks/zadania/`) oraz zainstaluj potrzebne pakiety npm (`npm install`).
 - Aby uruchomić aplikację wykonaj polecenie `npm run start`. Po chwili z prawej stony edytora webowego powinno pojawić się okno aplikacji. Warto abyś zwrócił uwagę na to, że można je otworzyć w osobnym oknie Twojej przeglądarki - jest to bardzo wygodna opcja.
 - W trakcie wykonywania zadań warto mieć włączone DevTools (np konsolę) w oknie przeglądarki z aplikacją.
 
