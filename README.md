@@ -42,11 +42,11 @@
 
 ####  Będziemy pracować na pliku `src/components/ChatWindow.tsx`
 - podmień wartość zmiennej `const authorName = 'my name';` na swoje imię lub nickname
-- w częściowo zaimplemmentowanej funkcji `handleSubmit(text: string)` mamy dostęp do zmiennej `text`
+- w częściowo zaimplementowanej funkcji `handleSubmit(text: string)` mamy dostęp do zmiennej `text`
 - ta funkcja jest wykonywana kiedy ktoś wciśnie przycisk wysyłania wiadomości - w zmiennej `text` będzie to co użytkownik wpisał do pola tekstowego - to nasza wiadomość, którą chcemy wysłać.
 - za pomocą zmiennej `socket` należy emitować event o nazwie `send-message` i jako jego ciało przesłać obiekt zawierający imię autora oraz treść wiadomości (zmienna `text` z punktu wyżej)
-- wysyłany obiektpowinien wyglądać tak: `{author: 'imie autora', content: 'tresc wiadomosci'}`.
-- kolejnym krokiem jest dodanie obiektu wiadomości (`newMessage`) do naszego UI za pomocą zmiany stanu za pomocą settera `setMessages` z `useState`. W zmiennej `messages` chcemy zachować poprzednie wiadomości oraz dodać nową.
+- wysyłany obiekt powinien wyglądać tak: `{author: 'imie autora', content: 'tresc wiadomosci'}`.
+- kolejnym krokiem jest dodanie obiektu wiadomości (`newMessage`) do naszego UI za pomocą settera `setMessages` z `useState`. W zmiennej `messages` chcemy zachować poprzednie wiadomości oraz dodać nową.
 
 ##### Jako dowód wykonania zadania wyślij zrzuty ekranu z kodem (plik `src/component/ChatWindow.tsx`) oraz okno przeglądarki z zaimplementowaną przez Ciebie funkcjonalnością.
 
