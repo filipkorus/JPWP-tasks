@@ -3,19 +3,26 @@
 
 # Przygotowanie środowiska
 
-### 1. Otwórz przeglądarkowy edytor [replit](https://replit.com/).
-- Niezbędne jest założenie tam konta.
-- Kolejnym krokiem jest utworzenie projektu - w tym celu kliknij na przycisk `+ Create Repl`.
-- Z zakładki `Templates` wybierz `Node.js` **WAŻNE!!!**.
-- Nadaj nazwę i zapisz projekt.
-- Od tego momentu wszystkie polecenia należy wykonać w tym środowisku.
+### 1. Edytor kodu
+
+#### Sposób I - edytor w przeglądarce - czasem się crashuje bo chmura ma mało pamięci RAM.
+- otwórz przeglądarkowy edytor [replit](https://replit.com/)
+- niezbędne jest założenie tam konta
+- kolejnym krokiem jest utworzenie projektu - w tym celu kliknij na przycisk `+ Create Repl`
+- z zakładki `Templates` wybierz `Node.js` **WAŻNE!!!**
+- nadaj nazwę i zapisz projekt
+- od tego momentu wszystkie polecenia należy wykonać w tym środowisku
+
+#### Sposób II - szybszy i bardziej niezawodny, ale mniej wygodny niż sposób I (trzeba coś zainstalować :()
+- sprawdź zainstalowaną na Twoim komputerze wersję Node.js (komenda `node --version`) -> jeśli na ekranie pojawił się numer wersji pomiń następny krok
+- jeśli na Twoim komputerze nie ma zainstalowanego Node.js trzeba go zainstalować - w tym celu kliknij na wybrany instalator i zainstaluj Node.js: [Windows 64-bit](https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi), [Linux](https://nodejs.org/dist/v16.16.0/node-v16.16.0-linux-x64.tar.xz), [MacOS Intel 64-bit](https://nodejs.org/dist/v16.16.0/node-v16.16.0-darwin-x64.tar.gz)
 
 ### 2. Uruchomienie projektu
 - Za pomocą polecenia `git clone https://github.com/filipkorus/JPWP-tasks.git` sklonuj kod startowy.
+- Jeśli pracujesz w środowisku lokalnie, u siebie na komputerze otwórz Visual Studio Code w folderze z projektem.
 - Wejdź w folder `zadania` (`cd JPWP-tasks/zadania/`).
 - Zainstaluj potrzebne pakiety npm (`npm install`).
-- Uruchom aplikację (`npm run start`).
-- Po chwili z prawej stony edytora webowego powinno pojawić się okno aplikacji. Warto abyś zwrócił uwagę na to, że można je otworzyć w osobnym oknie Twojej przeglądarki - jest to bardzo wygodna opcja.
+- Uruchom aplikację (`npm run start`). W przeglądarce powinno otworzyć się okno z projektem.
 - W trakcie wykonywania zadań warto mieć włączone DevTools (np konsolę) w oknie przeglądarki z aplikacją.
 
 
