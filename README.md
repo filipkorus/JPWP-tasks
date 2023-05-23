@@ -64,7 +64,7 @@
 - [listening to events in socket.io](https://socket.io/docs/v3/listening-to-events/)
 
 ####  Tutaj również będziemy pracować na pliku `src/components/ChatWindow.tsx`
-- w ciele funkcji hooka `useEffect` (pod komentarzem `/* listen for incoming messages */`) zależy nasłuchiwać socketowego eventu o nazwie `receive-message`, którego handler będzie zawierał zmienną - obiekt typu `IMessage`.
+- w ciele funkcji hooka `useEffect` (pod komentarzem `/* listen for incoming messages */`) należy nasłuchiwać socketowego eventu o nazwie `receive-message`, którego handler będzie zawierał zmienną - obiekt typu `IMessage`.
 - przychodzący obiekt wiadomości należy dodać do UI za pomocą settera `setMessages` z `useState` z użyciem spread operator - identycznie jak w poprzednim zadaniu
 - niezbędnym punktem nasłuchiwania eventów jest także ich czyszczenie (zapobiega to memory leak) za pomocą cleanup function
 
