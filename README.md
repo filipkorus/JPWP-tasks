@@ -48,7 +48,7 @@
 - [spread operator](https://www.w3schools.com/react/react_es6_spread.asp)
 
 ####  Będziemy pracować na pliku `src/components/ChatWindow.tsx`
-- podmień wartość zmiennej `const authorName = 'my name';` na swoje imię lub nickname
+- podmień wartość zmiennej `const authorName = 'my name';` na swoje imię lub nr indeksu
 - w częściowo zaimplementowanej funkcji `handleSubmit(text: string)` mamy dostęp do zmiennej `text`
 - ta funkcja jest wykonywana kiedy ktoś wciśnie przycisk wysyłania wiadomości - w zmiennej `text` będzie to co użytkownik wpisał do pola tekstowego - to nasza wiadomość, którą chcemy wysłać.
 - za pomocą zmiennej `socket` należy emitować event o nazwie `send-message` i jako jego ciało przesłać obiekt zawierający imię autora oraz treść wiadomości (zmienna `text` z punktu wyżej)
@@ -69,5 +69,19 @@
 - niezbędnym punktem nasłuchiwania eventów jest także ich czyszczenie (zapobiega to memory leak) za pomocą cleanup function
 
 ##### Jako dowód wykonania zadania wyślij zrzuty ekranu z kodem (plik `src/component/ChatWindow.tsx`) oraz okno przeglądarki z zaimplementowaną przez Ciebie funkcjonalnością.
+
+# Zadanie 4
+## Submitowanie pola tekstowego za pomocą klawisza Enter.
+
+#### Będziemy pracować na pliku `src/components/InputField.tsx`
+- uzupełnij jedynie kod w funkcji `handleKeyDown(event: React.KeyboardEvent<HTMLDivElement>)`
+- sprawdź czy wciśnięty przycisk (key - pole zmiennej event) to klawisz Enter
+- następnie użyj funkcji `event.preventDefault();`, aby zapobiec domyślnemu zachowaniu przeglądarki po wciśnięciu klawisza - w tym przypadku Entera
+- sprawdź czy długość wiadomości jest większa od zera
+- wywołaj funkcję przekazaną z props, która wyśle wiadomość tak samo jak kliknięcie przycisku *send message*
+- wyczyść zawartość zmiennej text, aby wyczyścić pole tekstowe
+- sprawdź czy po wpisaniu wiadomości i wciśnięciu Entera wiadomość się wysyła
+
+##### Jako dowód wykonania zadania wyślij zrzuty ekranu z kodem funkcji `handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>)` (plik `src/component/InputField.tsx`).
 
 # Dziękujemy za udział w demonstracji.

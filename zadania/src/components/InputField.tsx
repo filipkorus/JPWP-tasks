@@ -9,14 +9,9 @@ const InputField = ({handleSubmit, placeholder}: {
 	const [text, setText] = useState<string>('');
 
 	const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
-		if (event.key !== 'Enter') return;
+		return; // proszę usunąć tego returna przed rozpoczeciem zadania nr 4.
 
-		event.preventDefault();
-
-		if (text.length === 0) return;
-
-		handleSubmit(text);
-		setText('');
+		/* zadanie nr 4 *HERE* */
 	}
 	const handleButtonClick = (e:React.MouseEvent) => {
 		e.preventDefault();
